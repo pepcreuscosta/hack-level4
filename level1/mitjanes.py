@@ -11,7 +11,7 @@ def mitjana(list_of_numbs):
   total_sum = sum(int(i) for i in list_of_numbs)
   print(float(total_sum)/len(list_of_numbs))
 
-with open('data.txt', 'r') as f:
+with open('data2.txt', 'r') as f:
   for line in f:
     if line[-1] == "\n":
       clean_line = line.rstrip()
