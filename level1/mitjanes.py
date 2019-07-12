@@ -44,6 +44,9 @@ def parells(nums):
 def parellscompactes(nums):
   return [x for x in nums if x%2 == 0]
 
+def apply_funcs(nums, func):
+    return [i(nums) for i in func]
+
 with open('data2.txt', 'r') as f:
   for line in f:
     if line[-1] == "\n":
@@ -63,3 +66,4 @@ print (parells(column1))
 print (parells(column2))
 print (parellscompactes(column1))
 print (parellscompactes(column2))
+print (apply_funcs([1,2,3,4,5], [mitjana,parells,minim,maxim]))
